@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PLAYER</title>
+    <style>
+        body{
+            background-color: #333333;
+        }
+        #player{
+            background-color: rgb(148, 197, 197);
+            width: 500px;
+            height: 460px;
+        }
+        #controlling{
+           border-bottom: 5px solid white;
+           padding: 20px;
+           text-align: center;
+                   }
+        #play{
+           width: 50px;
+           height: 50px;
+           border-radius: 50px;
+           border: 2px solid  #549c9c;
+           background-color: #d3e8e8;
+        }
+        #prev{
+            width: 65px;
+            height: 30px;
+            border-radius: 50px;
+            border: 2px solid  #549c9c;
+            background-color: #d3e8e8;
+        }
+        #next{
+            width: 65px;
+            height: 30px;
+            border-radius: 50px;
+            border: 2px solid  #549c9c;
+            background-color: #d3e8e8;
+        }
+        #video{
+            padding-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="player">
+        <div id="controlling">
+            <button id="prev"><img src="images/left.png" alt="left" height="25"></button>
+            <button id="play"><img src="images/play.png" alt="play" height="30"></button>
+            <button id="next"><img src="images/right.png" alt="right" height="25"></button> 
+        </div>
+        <iframe id="video" width="100%" height="315" src="https://www.youtube.com/embed/acQS2Fef8tU" 
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+             picture-in-picture" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
